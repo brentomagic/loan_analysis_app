@@ -1,0 +1,7 @@
+streamlit
+polars
+pandas
+plotly.express
+from datetime
+pytz
+plotly.graph_objects
