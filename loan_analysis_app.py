@@ -5,8 +5,6 @@ import plotly.express as px
 from datetime import datetime, timedelta
 import pytz
 import plotly.graph_objects as go
-from plotly.subplots import make_subplots
-from lets_plot import *
 
 # Set page config
 st.set_page_config(page_title="Brent Ugoh Streamlit App", page_icon="🧙‍♂", layout="wide")
