@@ -2,6 +2,6 @@ streamlit
 polars
 pandas
 plotly.express
-from datetime
+datetime
 pytz
 plotly.graph_objects
