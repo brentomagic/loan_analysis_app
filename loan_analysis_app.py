@@ -261,7 +261,7 @@ fig3.add_annotation(
 
 # Adjust box opacity
 for trace in fig3.data:
-    trace.marker.opacity = 10
+    trace.marker.opacity = 1
 
 # Display the boxplot in Streamlit
 st.plotly_chart(fig3, use_container_width=True)
