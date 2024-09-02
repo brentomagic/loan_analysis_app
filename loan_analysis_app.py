@@ -121,8 +121,7 @@ st.plotly_chart(fig1, use_container_width=True)
 
 
 
-# Assuming week_revenue and max_weekly_revenue are DataFrames
-# Convert to Pandas DataFrames if needed
+# Converting to Pandas DataFrames for ease of use
 week_revenue_pd = week_revenue.to_pandas()
 week_revenue_pd_sorted = week_revenue_pd.sort_values('Week')
 
@@ -182,6 +181,7 @@ st.text("")
 st.text("")
 
 st.text("Summary of highest revenue for each business across different time periods.")
+
 # Function to convert Polars DataFrame to Markdown
 def df_to_markdown(df: pl.DataFrame) -> str:
     headers = "| " + " | ".join(df.columns) + " |"
@@ -224,7 +224,8 @@ Although HotDiggity has the highest monthly revenue and the highest total revenu
 
 st.text("")
 st.text("")
-# Create the boxplot
+
+# Create boxplot
 fig3 = px.box(clean_sales.to_pandas(), x='Name', y='Amount', color='Name',
               title='Distribution of Transaction Values',
               labels={'Amount': 'Transaction Amount', 'Name': ''},
